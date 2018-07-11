@@ -6,11 +6,13 @@ class Hand:
     Class to represent player's hand
     '''
 
-    def __init__(self, name, cards=[]):
+    def __init__(self, name, cards=None):
         '''
         To initialise player's hand you need to provide a list with tuples
         For instance [(2, '♠'), ([)'A', '♥')]
         '''
+        if cards is None:
+            cards = []
         self.name = name
         self.cards = cards
         self.score = self.get_score()
