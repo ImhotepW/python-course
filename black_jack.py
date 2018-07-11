@@ -2,8 +2,8 @@
 Text mode Black Jack game 
 '''
 from IPython.display import clear_output
-from Deck import Deck
-from Hand import Hand
+from Deck import deck
+from Hand import hand
 
 def request_bet(curr_bal):
     '''This function requests the player to bet some amount of the balance '''
